@@ -1,0 +1,55 @@
+Table.GridOne {
+	padding: 3px;
+	margin: 0;
+	background: #fffff;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+Table.GridOne Td {
+	padding: 2px;
+	border: 1px solid green;
+	border-collapse: collapse;
+}
+
+table, td, th {
+	border: 1px solid green;
+	width: 200px;
+	font-size: 20pt;
+}
+
+th {
+	background-color: green;
+	color: white;
+	width: 100px;
+}
+
+.center {
+	position: absolute;
+	left: 400px;
+	top: 30px;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, .8) url('../loading.gif') 50% 50%
+		no-repeat;
+}
+
+body.loading {
+	overflow: hidden;
+}
+
+body.loading .modal {
+	display: block;
+}
+
+.dialog {
+	display: none;
+}
